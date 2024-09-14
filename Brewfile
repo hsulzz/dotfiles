@@ -13,11 +13,11 @@ brew "gawk"
 brew "gh"
 brew "git"
 brew "jq"
+brew "yq"
 brew "kustomize"
 brew "tree"
 brew "wget"
-brew "gnupg" if OS.mac?
-brew "glibc" if OS.linux?
+brew "gnupg"
 brew "mas"
 
 # cask
