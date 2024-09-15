@@ -1,5 +1,6 @@
-golang 1.23.0
+golang 1.23.1
 nodejs 22.7.0
 elixir 1.17.2-otp-27
 terraform 1.9.5
 erlang 27.0.1
+

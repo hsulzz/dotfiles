@@ -20,6 +20,7 @@ brew "wget"
 brew "gnupg"
 brew "mas"
 
+
 # cask
 cask "wechat"
 cask "orbstack"

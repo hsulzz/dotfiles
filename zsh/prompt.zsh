@@ -20,9 +20,9 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo "on %{$fg[green]%}$(git_prompt_info) ✔︎%{$reset_color%}"
+      echo "on %{$fg_bold[green]%}$(git_prompt_info) ✔︎%{$reset_color%}"
     else
-      echo "on %{$fg[red]%}$(git_prompt_info) ✘%{$reset_color%}"
+      echo "on %{$fg_bold[red]%}$(git_prompt_info) ✘%{$reset_color%}"
     fi
   fi
 }
@@ -43,23 +43,22 @@ need_push () {
 
     if [[ $number == 0 ]]
     then
-      echo " "
+      echo ""
     else
-      echo " with %{$fg[magenta]%}$number unpushed%{$reset_color%}"
+      echo " with %{$fg_bold[magenta]%}$number unpushed%{$reset_color%}"
     fi
   fi
 }
 
 directory_name() {
- local path=$(pwd -P)
-    if [[ "$path" == "$HOME"* ]]; then
-        # echo "~${path#$HOME}" 
-            echo "%{$fg_bold[cyan]%}~${path#$HOME}%{$reset_color%}"   
-    else
-        echo "%{$fg[cyan]%}${path}%{$reset_color%}"
-    fi
+  if [[ "$HOME" == "$(pwd -P)" ]];then
+    echo "%{$fg_bold[cyan]%}~%{$reset_color%}"
+  else
+    echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 
+  fi
 }
+
 # battery_status() {
 #   if test ! "$(uname)" = "Darwin"
 #   then
@@ -72,12 +71,12 @@ directory_name() {
 #   fi
 # }
 
-# current_user() {
-#     echo "%{$fg[green]%}$(whoami)%{$reset_color%}"  
-# }
+current_user() {
+    echo "%{$fg[magenta]%}%n%{$reset_color%}"  
+}
 
 
-export PROMPT=$'\$(current_user) $(git_dirty)$(need_push)in $(directory_name) \n› '
+export PROMPT=$'\$(current_user) in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%{$fg[cyan]%}%{$reset_color%}"
 }
