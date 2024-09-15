@@ -1,5 +1,9 @@
 cask_args appdir: '/Applications'
 
+##############################
+#           DEV
+##############################
+
 # tap
 tap "homebrew/bundle"
 tap "hashicorp/tap"
@@ -18,29 +22,14 @@ brew "kustomize"
 brew "tree"
 brew "wget"
 brew "gnupg"
-brew "mas"
-
 
 # cask
-cask "wechat"
-cask "orbstack"
+
 cask "google-chrome"
-cask "firefox"
-cask "rustdesk"
-cask "microsoft-excel"
-cask "microsoft-word"
-cask "microsoft-powerpoint"
-cask "microsoft-remote-desktop"
 cask "visual-studio-code"
-cask "appcleaner"
 cask "aws-vault"
 cask "iterm2"
-cask "mitmproxy"
-cask "stats"
 cask "raycast"
-
-# mas
-mas "辞書 by 物書堂", id: 1_380_563_956
 
 # vscode extension
 vscode "4ops.terraform"
@@ -76,5 +65,28 @@ vscode "wekex.jsonlint"
 vscode "yzhang.markdown-all-in-one"
 vscode "zhuangtongfa.material-theme"
 vscode "ziyasal.vscode-open-in-github"
+vscode "editorconfig.editorconfig"
 
 
+##############################
+#           OTHER
+##############################
+
+# formula
+brew "mas"
+
+# cask
+cask "wechat"
+cask "orbstack"
+cask "rustdesk"
+cask "stats"
+cask "firefox"
+cask "mitmproxy"
+cask "microsoft-excel"
+cask "microsoft-word"
+cask "microsoft-powerpoint"
+cask "microsoft-remote-desktop"
+cask "appcleaner"
+
+# mas
+mas "辞書 by 物書堂", id: 1_380_563_956
