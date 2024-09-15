@@ -1,0 +1,1 @@
+source "$(asdf where gcloud)/completion.zsh.inc"
