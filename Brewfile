@@ -22,6 +22,9 @@ brew "kustomize"
 brew "tree"
 brew "wget"
 brew "gnupg"
+brew "wxwidgets"
+brew "libxslt"
+brew "fop"
 
 # cask
 
