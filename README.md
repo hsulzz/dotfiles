@@ -35,25 +35,3 @@ Just run the following command after removing unnecessary topics and tools.
 ```shell
 ./script/bootstrap
 ```
-
-
-## Flowchart
-
-```mermaid
-
-flowchart TD
-
-    bootstrap(script/bootstrap) --> git_config([setup_gitconfig])
-    git_config -.-> dotfiles
-    bootstrap(script/bootstrap) --> dotfiles([install_dotfiles])
-    dotfiles -.-> bin_dot
-    bootstrap(script/bootstrap) --> bin_dot(./bin/dot)
-    bin_dot(bin/dot) --> macos([macos/set-defaults.sh])
-    macos -.-> brew
-    bin_dot(bin/dot) --> brew([homebrew/install.sh])
-    brew -.-> install
-    bin_dot(bin/dot) --> install(script/install)
-    install(script/install)--> bundle([brew bundle])
-    install(script/install)--> install_sh(install using ⁠install.sh in each folder)
-
-```
