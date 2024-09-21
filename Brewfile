@@ -25,14 +25,18 @@ brew "gnupg"
 brew "wxwidgets"
 brew "libxslt"
 brew "fop"
+brew "telnet"
 
 # cask
 
 cask "google-chrome"
+cask "firefox"
 cask "visual-studio-code"
 cask "aws-vault"
 cask "iterm2"
 cask "raycast"
+
+
 
 # vscode extension
 vscode "4ops.terraform"

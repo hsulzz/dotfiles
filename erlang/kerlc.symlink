@@ -1,0 +1,2 @@
+KERL_CONFIGURE_OPTIONS="--enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --enable-threads --enable-smp-support --with-wx --with-odbc=/opt/homebrew/Cellar/unixodbc/2.3.12"
+GREP_OPTIONS=''
