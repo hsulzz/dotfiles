@@ -38,6 +38,7 @@ cask "raycast"
 cask "orbstack"
 cask "font-fira-code"
 cask "slack"
+cask "tableplus"
 
 
 ##############################
