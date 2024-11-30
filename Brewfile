@@ -1,22 +1,22 @@
 cask_args appdir: '/Applications'
 
-##############################
-#           DEV
-##############################
-
 # tap
 tap "homebrew/core"
 tap "homebrew/bundle"
+tap "homebrew/services"
 tap "hashicorp/tap"
+
+# 
+# dev
+# 
 
 # formula
 brew "ack"
 brew "coreutils"
-brew "asdf"
 brew "curl"
 brew "gawk"
-brew "gh"
 brew "git"
+brew "gh"
 brew "jq"
 brew "yq"
 brew "kustomize"
@@ -27,6 +27,7 @@ brew "wxwidgets"
 brew "libxslt"
 brew "fop"
 brew "telnet"
+brew "mise"
 
 # cask
 cask "google-chrome"
@@ -42,9 +43,9 @@ cask "tableplus"
 cask "chatgpt"
 
 
-##############################
-#           OTHER
-##############################
+# 
+# others
+#
 
 # formula
 brew "mas"
@@ -54,7 +55,6 @@ cask "wechat"
 cask "rustdesk"
 cask "stats"
 cask "firefox"
-cask "mitmproxy"
 cask "microsoft-excel"
 cask "microsoft-word"
 cask "microsoft-powerpoint"

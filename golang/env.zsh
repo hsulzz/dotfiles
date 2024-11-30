@@ -1,1 +1,0 @@
-export GOROOT=$(dirname $(asdf which go))/..

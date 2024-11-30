@@ -3,7 +3,6 @@
 # Homebrew
 #
 
-
 if test ! $(which brew)
 then
   echo "  Installing Homebrew..."

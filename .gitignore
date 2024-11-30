@@ -1,2 +1,3 @@
 git/gitconfig.local.symlink
+mise/mise.local.toml.symlink
 Brewfile.lock.json

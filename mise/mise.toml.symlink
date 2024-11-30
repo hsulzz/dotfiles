@@ -1,0 +1,14 @@
+[tools]
+go  = "1.23.3"
+elixir = "1.17.3-otp-27"
+erlang = "27"
+swift = "6.0.2"
+node = "lts"
+java = "lts"
+rust = "1.83.0"
+
+
+
+[settings]
+global_config_file = "$HOME/.mise.toml"
+trusted_config_paths = ["$HOME/.mise.toml"]
