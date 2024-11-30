@@ -44,7 +44,7 @@ export ZSH=$HOME/.dotfiles
 $ZSH/macos/set-defaults.sh
 
 # Install homebrew
-$ZSH/homebrew/install.sh 2>&1
+$ZSH/homebrew/install 2>&1
 
 # Update dotfiles themselves
 if which git &>/dev/null; then
@@ -60,9 +60,6 @@ brew update
 
 echo "› brew upgrade"
 brew upgrade
-
-echo "› brew bundle"
-brew bundle
 
 # Install software
 echo "› script/install"

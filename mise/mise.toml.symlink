@@ -6,7 +6,7 @@ swift = "6.0.2"
 node = "lts"
 java = "lts"
 rust = "1.83.0"
-
+ruby = "3.3.6"
 
 
 [settings]

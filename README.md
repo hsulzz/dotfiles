@@ -2,7 +2,7 @@
 
 Dotfiles are how you personalize your system. These are mine.
 
-I personally install everything that does not need version management using [`Homebrew`](https://brew.sh), and the others using [`asdf`](https://github.com/asdf-vm/asdf) for easily switching toolchain versions.
+I personally install everything that does not need version management using [`Homebrew`](https://brew.sh), and the others using [`mise`](https://github.com/jdx/mise) for easily switching toolchain versions.
 
 The repository is cloned from [**holman/dotfiles**](https://github.com/holman/dotfiles), **please read the README file in the original repository**.
 
