@@ -1,2 +1,4 @@
 eval "$(mise activate --shims)"
-eval "$(mise hook-env)"
+eval "$(mise activate)"
+
+# export PATH="$(mise where go)/bin:$PATH"

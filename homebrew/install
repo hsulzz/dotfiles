@@ -15,6 +15,6 @@ fi
 
 # install packages
 echo "› brew bundle"
-brew bundle
+brew bundle --file "${ZSH}/Brewfile"
 
 exit 0
