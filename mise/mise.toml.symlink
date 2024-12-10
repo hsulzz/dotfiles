@@ -8,6 +8,7 @@ ruby = "3.3.6"
 rust = "1.83.0"
 swift = "6.0.2"
 gcloud = "502.0.0"
+terraform = "1.10.1"
 
 
 [settings]

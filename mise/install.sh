@@ -1,3 +1,3 @@
 #!/bin/sh 
 
-mise install -y
+/opt/homebrew/bin/mise install  -y

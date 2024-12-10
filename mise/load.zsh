@@ -1,4 +1,6 @@
-eval "$(mise activate --shims)"
-eval "$(mise activate)"
+#!/bin/zsh
 
-# export PATH="$(mise where go)/bin:$PATH"
+eval "$(mise hook-env)"
+
+# add the line to .zprofile
+# eval "$(/opt/homebrew/bin/mise activate --shims)"
