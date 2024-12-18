@@ -28,6 +28,7 @@ brew "libxslt"
 brew "fop"
 brew "telnet"
 brew "mise"
+brew "helm"
 
 # cask
 cask "google-chrome"
