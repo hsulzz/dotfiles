@@ -1,3 +1,4 @@
 git/gitconfig.local.symlink
 mise/mise.local.toml.symlink
 Brewfile.lock.json
+langs/node/npmrc.local.symlink
