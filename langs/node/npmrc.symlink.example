@@ -79,12 +79,12 @@
 ; init-license=ISC
 ; init-module=~/.npm-init.js
 ; init-version=1.0.0
-; init.author.email=xulu@ymail.ne.jp
-; init.author.name=Drúcht
+init.author.email=xulu@ymail.ne.jp
+init.author.name=Drúcht
 ; init.author.url=
 ; init.license=ISC
 ; init.module=~/.npm-init.js
-; init.version=0.0.1
+init.version=0.0.1
 ; install-links=false
 ; install-strategy=hoisted
 ; json=false

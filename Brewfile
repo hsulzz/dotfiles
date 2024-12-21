@@ -12,23 +12,23 @@ tap "hashicorp/tap"
 
 # formula
 brew "ack"
-brew "coreutils"
+brew "wget"
 brew "curl"
 brew "gawk"
+brew "tree"
+brew "gnupg"
+brew "coreutils"
 brew "git"
 brew "gh"
 brew "jq"
 brew "yq"
 brew "kustomize"
-brew "tree"
-brew "wget"
-brew "gnupg"
 brew "wxwidgets"
 brew "libxslt"
 brew "fop"
 brew "telnet"
 brew "mise"
-brew "helm"
+brew "helm
 
 # cask
 cask "google-chrome"
@@ -59,7 +59,7 @@ cask "firefox"
 cask "microsoft-excel"
 cask "microsoft-word"
 cask "microsoft-powerpoint"
-cask "microsoft-remote-desktop"
+cask "windows-app"
 cask "appcleaner"
 
 # mas
