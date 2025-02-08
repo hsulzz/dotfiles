@@ -1,67 +1,64 @@
 cask_args appdir: '/Applications'
 
-# tap
-tap "homebrew/core"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "hashicorp/tap"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "tako8ki/tap"
 
-# 
-# dev
-# 
-
-# formula
 brew "ack"
-brew "wget"
-brew "curl"
-brew "gawk"
-brew "tree"
-brew "gnupg"
+brew "autoconf"
+brew "automake"
+brew "openssl@3"
+brew "readline"
+brew "cmake"
 brew "coreutils"
-brew "git"
-brew "gh"
-brew "jq"
-brew "yq"
-brew "kustomize"
-brew "wxwidgets"
-brew "libxslt"
+brew "curl"
 brew "fop"
-brew "telnet"
-brew "mise"
-brew "helm
-
-# cask
-cask "google-chrome"
-cask "firefox"
-cask "visual-studio-code"
-cask "aws-vault"
-cask "iterm2"
-cask "raycast"
-cask "orbstack"
-cask "font-fira-code"
-cask "slack"
-cask "tableplus"
-cask "chatgpt"
-
-
-# 
-# others
-#
-
-# formula
+brew "gawk"
+brew "gh"
+brew "git"
+brew "gnupg"
+brew "helm"
+brew "htop"
+brew "jq"
+brew "kustomize"
+brew "libtool"
+brew "libxslt"
+brew "libyaml"
 brew "mas"
+brew "mise"
+brew "telnet"
+brew "tree"
+brew "unixodbc"
+brew "wget"
+brew "wxwidgets"
+brew "yq"
+brew "cobra-cli"
 
-# cask
-cask "wechat"
-cask "rustdesk"
-cask "stats"
-cask "firefox"
-cask "microsoft-excel"
-cask "microsoft-word"
-cask "microsoft-powerpoint"
-cask "windows-app"
 cask "appcleaner"
+cask "aws-vault"
+cask "chatgpt"
+cask "firefox" 
+cask "font-fira-code"
+cask "google-chrome" 
+cask "iterm2"
+cask "microsoft-excel"
+cask "microsoft-powerpoint"
+cask "microsoft-word"
+cask "windows-app"
+cask "raycast"
+cask "stats"
+cask "orbstack"
+cask "postman"
+cask "tableplus"
+cask "visual-studio-code"
+cask "rustdesk" 
+cask "spotify"
+cask "slack"
+cask "wechat"
+cask "qq"
 
-# mas
-mas "辞書 by 物書堂", id: 1_380_563_956
-mas "LINE", id: 539_883_307
+mas "Dictionaries", id: 1380563956
+mas "LINE", id: 539883307
+mas "Xcode", id: 497799835
