@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
- # functions
- #
+# functions
+#
 setup_gitconfig() {
   if ! [ -f git/gitconfig.local.symlink ]; then
     info 'setup gitconfig'
@@ -45,6 +45,12 @@ install_dotfiles() {
 
   for src in $(find -H "$DOTFILES_ROOT" -maxdepth 3 -name '*.symlink' -not -path '*.git*'); do
     dst="$HOME/.$(basename "${src%.*}")"
+
+    # special handling for mise
+    if [ "$src" == *"mise"* ]; then
+      dst="$HOME/.config/mise/.config.yaml"
+    fi
+
     _link_file "$src" "$dst"
   done
 }
