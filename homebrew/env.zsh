@@ -1,1 +1,1 @@
-export HOMEBREW_NO_ENV_HINTS=false
+export HOMEBREW_NO_ENV_HINTS=
