@@ -48,10 +48,14 @@ $ZSH/homebrew/install 2>&1
 
 # Update dotfiles themselves
 if which git &>/dev/null; then
-	echo "› git pull"
-	git -C $ZSH pull
+    if [ -d "$ZSH/.git" ]; then
+        echo "› git pull"
+        git -C $ZSH pull
+    else
+        echo "› .git folder not found, skip updating dotfiles"
+    fi
 else
-	echo "› git command not found, skip updating dotfiles"
+    echo "› git command not found, skip updating dotfiles"
 fi
 
 # Upgrade homebrew
